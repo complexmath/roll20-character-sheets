@@ -2,6 +2,11 @@
 <div class="sheet-box">
     <!-- The "Shadowrun" logo -->
     <div class="sheet-thirtythreepercent">
+        <!--
+        <img src="https://i.imgur.com/TQ8WzzX.png" style="max-height: 100px;"/>
+        <img src="http://files.gamebanana.com/img/ico/sprays/5369148d43098.png" style="max-height: 100px;"/>
+        <img src="http://1.bp.blogspot.com/-CSB0R2x-yk4/VUtFcVRnTkI/AAAAAAAAAy0/ES187FHRlB8/s1600/SR5%2BLogo%2BWords%2BOnly.png" style="max-height: 100px;"/> 
+        <-->
         <img src="http://i.imgur.com/nyTmn4c.png" style="max-height: 100px;"/>
     </div>
     <!-- Top line: name, metatype, emerged/awakened checkboxes, essence -->
@@ -104,8 +109,24 @@
         </div>
         <div class="sheet-row sheet-item" style="margin-top:-12px;">
         </div>
-        <div class="sheet-row sheet-item"></div>
-        <div class="sheet-row sheet-item"></div>
+        <div class="sheet-row">
+            <div class="sheet-item sheet-micro"></div>
+            <div class="sheet-item sheet-small"><label>Guanxi:</label></div>
+            <div class="sheet-item sheet-puny"><input type="number" name="attr_guanxiBase" value="1"/></div>
+            <div class="sheet-item sheet-halflittle"><label>+</label></div>
+            <div class="sheet-item sheet-puny"><input type="number" name="attr_guanxiMod" value="0"/></div>
+            <div class="sheet-item sheet-micro"></div>
+            <div class="sheet-item sheet-morebig"><input type="text" name="attr_guanxiModNote"/></div>
+        </div>
+        <div class="sheet-row">
+            <div class="sheet-item sheet-micro"></div>
+            <div class="sheet-item sheet-small"><label>Muanzi:</label></div>
+            <div class="sheet-item sheet-puny"><input type="number" name="attr_muanziBase" value="1"/></div>
+            <div class="sheet-item sheet-halflittle"><label>+</label></div>
+            <div class="sheet-item sheet-puny"><input type="number" name="attr_muanziMod" value="0"/></div>
+            <div class="sheet-item sheet-micro"></div>
+            <div class="sheet-item sheet-morebig"><input type="text" name="attr_muanziModNote"/></div>
+        </div>
     </div>
     <!-- Edge / plot checkboxes (right column) -->
     <div class="sheet-fiftypercent">
@@ -517,6 +538,8 @@
     <input type="hidden" name="attr_logic" value="(@{logicBase} + @{logicMod})" disabled="disabled"/>
     <input type="hidden" name="attr_charisma" value="(@{charismaBase} + @{charismaMod})" disabled="disabled"/>
     <input type="hidden" name="attr_edge" value="(@{edgeBase} + @{edgeMod})" disabled="disabled"/>
+    <input type="hidden" name="attr_guanxi" value="(@{guanxiBase} + @{guanxiMod})" disabled="disabled"/>
+    <input type="hidden" name="attr_muanzi" value="(@{muanziBase} + @{muanziMod})" disabled="disabled"/>
     <!-- Skills -->
     <input type="hidden" name="attr_perception" value="(@{perceptionBase} + @{perceptionMod})" disabled="disabled"/>
     <input type="hidden" name="attr_memory" value="(@{memoryBase} + @{memoryMod})" disabled="disabled"/>
